@@ -1,0 +1,89 @@
+.container{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 120px);
+    text-align: center;
+}
+
+
+.grs input:hover {
+    background-color: #4D55CC;
+    color: white;
+    transition: background-color 1s, color 0.7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background:linear-gradient(240deg,rgb(77, 85, 204),rgb(122, 115, 209),rgb(181, 168, 213));
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.navbar {
+    background-color: #211C84;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4D55CC;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 7px;
+    transition: background-color 0.3s, color 0.6s, font-size 1s;
+
+}
+
+.navbar ul li a:hover {
+    background-color: #7A73D1;
+    color: black;
+    font-size: 25px;
+    
+}
