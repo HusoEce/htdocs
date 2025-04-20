@@ -53,3 +53,13 @@ body {
     font-size: 25px;
     
 }
+
+.dnm{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-top: -645px;
+    left: 1400px;
+    display: flex;
+}

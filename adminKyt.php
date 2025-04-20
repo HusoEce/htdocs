@@ -10,10 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechnoCastle - Admin Liste</title>
     <link rel="stylesheet" href="adminKyt.css">
+    <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="navbar">
-        <a href="admin.php"><img src="img/Logo.png" alt="" style="height:100px;"></a>
+        <a href="admin.php"><img src="img/logos/Logo.png" alt="" style="height:100px;"></a>
         <ul>
             <li><a href="admin.php">Admin Sekmesine Dön</a></li>
         </ul>
@@ -44,7 +45,6 @@
                     }
                 }
             }
--*
             if (isset($_POST["Sil"])) {
                 $klncad = trim($_POST["ad"]);
                 $klncsfr = trim($_POST["sifre"]);

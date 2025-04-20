@@ -10,10 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechnoCastle - Mağza</title>
     <link rel="stylesheet" href="Tekno.css">
+    <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="navbar">
-        <a href="Tekno.php"><img src="img/Logo.png" alt="" style="height:100px;"></a>
+        <a href="Tekno.php"><img src="img/logos/Logo.png" alt="" style="height:100px;"></a>
         <ul>
             <li><a href="admGrs.php">Admin Giriş Yap</a></li>
         </ul>
@@ -22,18 +23,6 @@
     <div class="container">
         <div class="filtre-alani">
             <form method="get">
-                <select name="sirala">
-                    <option value="">Sırala</option>
-                    <option value="az">A-Z</option>
-                    <option value="za">Z-A</option>
-                </select>
-                <select name="kategori">
-                    <option value="">Kategori</option>
-                    <option value="Kablo">Kablo</option>
-                    <option value="Klavye">Klavye</option>
-                    <option value="Fare">Fare</option>
-                </select>
-
                 <input type="text" name="arama" placeholder="İsim ara">
                 <button type="submit">Uygula</button>
                 <?php

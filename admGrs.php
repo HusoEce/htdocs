@@ -9,10 +9,11 @@ include "baglanti.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechnoCastle - Admin Giriş</title>
     <link rel="stylesheet" href="admGrs.css">
+    <link rel="shortcut icon" href="img/logos/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="navbar">
-        <a href="Tekno.php"><img src="img/Logo.png" alt="" style="height:100px;"></a>
+        <a href="Tekno.php"><img src="img/logos/Logo.png" alt="" style="height:100px;"></a>
         <ul>
             <li><a href="Tekno.php">Geri Dön</a></li>
         </ul>
