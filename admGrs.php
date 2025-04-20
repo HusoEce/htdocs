@@ -24,15 +24,15 @@ include "baglanti.php";
                     $ad = trim($_POST["ad"]);
                     $sifre = trim($_POST["sifre"]);
                     $sql = "SELECT * FROM admins WHERE ad = ? AND sifre = ?";
-                    $stmt = $db->prepare($sql);
-                    $stmt->execute([$ad, $sifre]);
+                    $clst = $db->prepare($sql);
+                    $clst->execute([$ad, $sifre]);
 
-                    if ($stmt->rowCount() > 0) {
+                    if ($clst->rowCount() > 0) {
                         $_SESSION["admin_giris"] = true;
                         header("Location: admin.php");
                         exit();
                     } else {
-                        echo "<h1 style='color: red;'>HATALI GİRİŞ! KULLANICI ADI VE ŞİFRE YANLIŞ</h1>";
+                        echo "<h1 style='color: red;'>HATALI GİRİŞ! KULLANICI ADI VEYA ŞİFRE YANLIŞ</h1>";
                     }
                 }
             ?>
