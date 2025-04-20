@@ -47,7 +47,7 @@ include "baglanti.php";
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align:center; padding-top: 10px;" class="grs">
-                        <input type="submit" value="Giriş" name="Giris" style="height:100px; width:200px; font-size:50px;">
+                        <input type="submit" value="Giriş" name="Giris" style="height:100px; width:200px; font-size:50px; border-radius:40px;">
                     </td>
                 </tr>
             </table>
