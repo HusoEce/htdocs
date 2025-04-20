@@ -33,19 +33,22 @@
             if (isset($_POST["Kaydet"])) {
                 $klncad = trim($_POST["ad"]);
                 $klncsfr = trim($_POST["sifre"]);
-                $kaydet1 = $db->prepare("INSERT INTO `admins`(`ad`, `sifre`) VALUES (:ad, :sifre)");
-                $kaydet1->bindParam(":ad", $klncad, PDO::PARAM_STR);
-                $kaydet1->bindParam(":sifre", $klncsfr, PDO::PARAM_STR);
 
-                $ekle1 = $kaydet1->execute();
-                if ($ekle1) {
-                    echo "<script type='text/javascript'>window.location.href = window.location.href;</script>";
+                if ($klncad !== "Zero" && $klncsfr !== "ZeroZero") {
+                    $kaydet1 = $db->prepare("INSERT INTO `admins`(`ad`, `sifre`) VALUES (:ad, :sifre)");
+                    $kaydet1->bindParam(":ad", $klncad, PDO::PARAM_STR);
+                    $kaydet1->bindParam(":sifre", $klncsfr, PDO::PARAM_STR);
+                    $ekle1 = $kaydet1->execute();
+                    if ($ekle1) {
+                        echo "<script type='text/javascript'>window.location.href = window.location.href;</script>";
+                    }
                 }
             }
-
+-*
             if (isset($_POST["Sil"])) {
                 $klncad = trim($_POST["ad"]);
-                if($klncad !== "Zero"){
+                $klncsfr = trim($_POST["sifre"]);
+                if($klncad !== "Zero" ){
                     $sl1 = $db->prepare('DELETE FROM `admins` WHERE ad = :ad');
                     $sl1->bindParam(":ad", $klncad, PDO::PARAM_STR);
                     $sifir1 = $sl1->execute();
@@ -53,7 +56,7 @@
                         echo "<script type='text/javascript'>window.location.href = window.location.href;</script>";
                     }
                 }
-                else if ($klncad == "Zero") {
+                else if ($klncad == "Zero" && $klncsfr == "ZeroZero") {
                     echo "<script type='text/javascript'>alert('Ana Admini Silme İşlemi Denemeniz Başarısız Bunu Yapamazsınız!!');</script>";
                     echo "<script type='text/javascript'>window.location.href = window.location.href;</script>";
                 }
@@ -78,4 +81,4 @@
         </table>
     </div>
 </body>
-</html>
+/-*</html>-
